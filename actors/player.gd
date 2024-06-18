@@ -1,32 +1,30 @@
 extends CharacterBody2D
 
+@onready var animatedsprite = $AnimationPlayer
+@onready var sprite = $Sprite2D
 
-const SPEED = 300.0
-
+const SPEED = 100
 
 var direction = Vector2.ZERO
 
 
-func _physics_process(delta):
-	
-	get_dir()
-	velocity = direction * SPEED
-	# Handle jump.
-	#if Input.is_action_just_pressed("ui_accept") and is_on_floor():
-		#velocity.y = JUMP_VELOCITY
-#
-	## Get the input direction and handle the movement/deceleration.
-	## As good practice, you should replace UI actions with custom gameplay actions.
-	#var direction = Input.get_axis("ui_left", "ui_right")
-	#if direction:
-		#velocity.x = direction * SPEED
-	#else:
-		#velocity.x = move_toward(velocity.x, 0, SPEED)
+func _process(delta):
+	animation()
 
+func _physics_process(delta):
+	direction = get_dir()
+	velocity = direction * SPEED
 	move_and_slide()
 
-func get_dir():
-	#Input.is_action_pressed("ui_left")
-	#direction.x = float("ui_right") - float("ui_left")
-	direction.x = float(Input.is_action_pressed("ui_left")) - float(Input.is_action_pressed("ui_right"))
-	print(direction)
+func get_dir() -> Vector2:
+	return Vector2(int(Input.is_action_pressed("ui_right")) - int(Input.is_action_pressed("ui_left")), int(Input.is_action_pressed("ui_down")) - int(Input.is_action_pressed("ui_up"))).normalized()
+
+func animation():
+	if direction != Vector2.ZERO:
+		if direction.x < 0:
+			sprite.flip_h = true
+		elif direction.x > 0:
+			sprite.flip_h = false
+		animatedsprite.play("run")
+	else:
+		animatedsprite.play("idle")
