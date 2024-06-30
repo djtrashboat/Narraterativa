@@ -1,11 +1,16 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1718685544
+::res://::1719695469
 icon.svg::CompressedTexture2D::7071233803494211508::1718683901::1718684149::1::::<><>::
-::res://actors/::1718685464
-player.gd::GDScript::-1::1718684523::0::1::::<>CharacterBody2D<>::
-player.tscn::PackedScene::7536789457618959357::1718685464::0::1::::<><>::res://actors/player.gd<>uid://c70mgm5l38lvw::::res://icon.svg
-::res://assets/::1718685549
-::res://assets/santa_sheets/::1718685549
+pghandle.gd::GDScript::-1::1719526168::0::1::::<>Container<>::
+RichTextLabel.gd::GDScript::-1::1719531728::0::1::::<>RichTextLabel<>::
+twine.gd::GDScript::-1::1719695419::0::1::::<>Node2D<>::
+twine.tscn::PackedScene::5520802319431022263::1719531735::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://RichTextLabel.gd
+::res://actors/::1719531734
+player.gd::GDScript::-1::1718688901::0::1::::<>CharacterBody2D<>::
+player.tscn::PackedScene::7536789457618959357::1719531734::0::1::::<><>::res://actors/player.gd<>uid://dcsur8ilpxvjq::::res://assets/santa_sheets/idle_sheet.png<>uid://bnwexwhv3hc4h::::res://assets/santa_sheets/run_sheet.png
+::res://assets/::1719264958
+VCR_OSD_MONO_1.001.ttf::FontFile::911642969176689030::1719264957::1719264958::1::::<><>::
+::res://assets/santa_sheets/::1718685910
 hit_sheet.png::CompressedTexture2D::5219088435434819106::1718685549::1718685910::1::::<><>::
 idle_sheet.png::CompressedTexture2D::7338044982429909790::1718685549::1718685910::1::::<><>::
 pull_sheet.png::CompressedTexture2D::8494232003588511766::1718685549::1718685910::1::::<><>::
@@ -18,5 +23,7 @@ all_jump_frames_sheet.png::CompressedTexture2D::4174977237971717591::1718685549:
 jump_anticipation_sheet.png::CompressedTexture2D::6938832248061351698::1718685549::1718685549::1::::<><>::
 jump_down_sheet.png::CompressedTexture2D::6023763969563722322::1718685549::1718685549::1::::<><>::
 jump_up_sheet.png::CompressedTexture2D::6875666125254710095::1718685549::1718685549::1::::<><>::
-::res://scenes/::1718684523
-world.tscn::PackedScene::7414369371827471273::1718684523::0::1::::<><>::uid://dfm426ls5mm5r::::res://actors/player.tscn
+::res://paginas/::1719695465
+::res://scenes/::1719695469
+primeira pagina.tscn::PackedScene::4574442691259201973::1719695455::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://RichTextLabel.gd
+world.tscn::PackedScene::7414369371827471273::1719531734::0::1::::<><>::uid://dfm426ls5mm5r::::res://actors/player.tscn

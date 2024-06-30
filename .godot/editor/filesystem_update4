@@ -1,3 +1,8 @@
-res://actors/player.tscn
-res://actors/player.gd
+res://twine.gd
+res://twine.tscn
+res://RichTextLabel.gd
 res://scenes/world.tscn
+res://actors/player.tscn
+res://paginas/botao.gd
+res://pghandle.gd
+res://paginas/primeira pagina.tscn
