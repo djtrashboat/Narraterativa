@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cr27ropeti1yk"
-path="res://.godot/imported/jump_down_sheet.png-6da68189919bfd0a59046d1699819a89.ctex"
+path="res://.godot/imported/jump_down_sheet.png-30de9d20986cdf15809ef49f643c07cc.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/santa_sheets/jump/jump_down_sheet.png"
-dest_files=["res://.godot/imported/jump_down_sheet.png-6da68189919bfd0a59046d1699819a89.ctex"]
+source_file="res://Assets/santa_sheets/jump/jump_down_sheet.png"
+dest_files=["res://.godot/imported/jump_down_sheet.png-30de9d20986cdf15809ef49f643c07cc.ctex"]
 
 [params]
 

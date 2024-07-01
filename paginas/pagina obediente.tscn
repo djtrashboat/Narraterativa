@@ -1,22 +1,10 @@
-[gd_scene load_steps=9 format=3 uid="uid://bi5bht4a27fs0"]
+[gd_scene load_steps=4 format=3 uid="uid://bmueciecpi0ts"]
 
-[ext_resource type="Script" path="res://pghandle.gd" id="1_0hpfg"]
-[ext_resource type="Script" path="res://scenes/entraboneco.gd" id="1_ytm2x"]
-[ext_resource type="FontFile" uid="uid://m8uvkilm6m3g" path="res://Assets/VCR_OSD_MONO_1.001.ttf" id="2_45nm2"]
-[ext_resource type="Script" path="res://paginas/botao.gd" id="3_75l7w"]
-[ext_resource type="PackedScene" uid="uid://dfm426ls5mm5r" path="res://actors/player.tscn" id="4_7tgx3"]
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_hdlsj"]
-size = Vector2(437, 24)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_r23kt"]
-size = Vector2(238, 181)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_kwh8t"]
-size = Vector2(20, 256)
+[ext_resource type="Script" path="res://pghandle.gd" id="1_uyfrs"]
+[ext_resource type="FontFile" uid="uid://m8uvkilm6m3g" path="res://Assets/VCR_OSD_MONO_1.001.ttf" id="2_uno3a"]
+[ext_resource type="Script" path="res://paginas/botao.gd" id="3_tgi0e"]
 
 [node name="pagina 1" type="Node2D"]
-script = ExtResource("1_ytm2x")
 
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_right = 384.0
@@ -34,7 +22,7 @@ offset_right = 384.0
 offset_bottom = 216.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_0hpfg")
+script = ExtResource("1_uyfrs")
 
 [node name="texto timer" type="Timer" parent="Container"]
 wait_time = 0.05
@@ -50,17 +38,17 @@ theme_override_constants/margin_bottom = 10
 [node name="texto" type="RichTextLabel" parent="Container/página"]
 custom_minimum_size = Vector2(368, 106.615)
 layout_mode = 2
-theme_override_fonts/normal_font = ExtResource("2_45nm2")
-theme_override_fonts/bold_font = ExtResource("2_45nm2")
-theme_override_fonts/italics_font = ExtResource("2_45nm2")
-theme_override_fonts/bold_italics_font = ExtResource("2_45nm2")
-theme_override_fonts/mono_font = ExtResource("2_45nm2")
+theme_override_fonts/normal_font = ExtResource("2_uno3a")
+theme_override_fonts/bold_font = ExtResource("2_uno3a")
+theme_override_fonts/italics_font = ExtResource("2_uno3a")
+theme_override_fonts/bold_italics_font = ExtResource("2_uno3a")
+theme_override_fonts/mono_font = ExtResource("2_uno3a")
 theme_override_font_sizes/normal_font_size = 12
 theme_override_font_sizes/bold_font_size = 12
 theme_override_font_sizes/italics_font_size = 12
 theme_override_font_sizes/bold_italics_font_size = 12
 theme_override_font_sizes/mono_font_size = 12
-text = "deixe a seta para baixo pressionada"
+text = "você é realmente muito obediente"
 scroll_active = false
 visible_characters = 0
 visible_ratio = 0.0
@@ -79,11 +67,23 @@ layout_mode = 2
 theme_override_colors/font_color = Color(0, 1, 1, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 1, 1)
 theme_override_colors/font_hover_color = Color(0.895869, 0.868954, 7.70092e-07, 1)
-theme_override_fonts/font = ExtResource("2_45nm2")
+theme_override_fonts/font = ExtResource("2_uno3a")
 theme_override_font_sizes/font_size = 10
 text = "para a página 2"
-script = ExtResource("3_75l7w")
-proxima_pagina = "res://scenes/world.tscn"
+script = ExtResource("3_tgi0e")
+proxima_pagina = "res://scenes/entraboneco.tscn"
+
+[node name="botao3" type="Button" parent="Container/página/botoes"]
+visible = false
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 1, 1)
+theme_override_colors/font_hover_color = Color(0.895869, 0.868954, 7.70092e-07, 1)
+theme_override_fonts/font = ExtResource("2_uno3a")
+theme_override_font_sizes/font_size = 10
+text = "voltar para o início"
+script = ExtResource("3_tgi0e")
+proxima_pagina = "res://twine.tscn"
 
 [node name="botao2" type="Button" parent="Container/página/botoes"]
 visible = false
@@ -91,34 +91,12 @@ layout_mode = 2
 theme_override_colors/font_color = Color(0, 1, 1, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 1, 1)
 theme_override_colors/font_hover_color = Color(0.895869, 0.868954, 7.70092e-07, 1)
-theme_override_fonts/font = ExtResource("2_45nm2")
+theme_override_fonts/font = ExtResource("2_uno3a")
 theme_override_font_sizes/font_size = 10
-text = "página 3"
-
-[node name="Player" parent="." instance=ExtResource("4_7tgx3")]
-position = Vector2(53, -30)
-
-[node name="Area2D" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(190.5, 46)
-shape = SubResource("RectangleShape2D_hdlsj")
-
-[node name="Area2Ddir" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2Ddir"]
-position = Vector2(264, 124.5)
-shape = SubResource("RectangleShape2D_r23kt")
-
-[node name="Area2Desq" type="Area2D" parent="."]
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2Desq"]
-position = Vector2(-38, 115)
-shape = SubResource("RectangleShape2D_kwh8t")
+text = "página 4"
 
 [connection signal="timeout" from="Container/texto timer" to="Container" method="_on_texto_timer_timeout"]
 [connection signal="button_down" from="Container/página/botoes/botao1" to="Container" method="_on_botao_1_button_down"]
 [connection signal="button_down" from="Container/página/botoes/botao1" to="Container/página/botoes/botao1" method="_on_button_down"]
-[connection signal="body_entered" from="Area2D" to="." method="_on_area_2d_body_entered"]
-[connection signal="body_entered" from="Area2Ddir" to="." method="_on_area_2_ddir_body_entered"]
-[connection signal="body_entered" from="Area2Desq" to="." method="_on_area_2_desq_body_entered"]
+[connection signal="button_down" from="Container/página/botoes/botao3" to="Container" method="_on_botao_1_button_down"]
+[connection signal="button_down" from="Container/página/botoes/botao3" to="Container/página/botoes/botao3" method="_on_button_down"]

@@ -1,3 +1,5 @@
+CollisionShape2D
+Area2D
 HBoxContainer
 MarginContainer
 Container
@@ -8,6 +10,5 @@ TextEdit
 ColorRect
 AnimationPlayer
 AnimatedSprite2D
-CollisionShape2D
 Sprite2D
 CharacterBody2D

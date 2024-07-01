@@ -12,6 +12,7 @@ func mudar_pagina():
 
 func mudar_texto():
 	print("mudar texto")
+	texto.visible_characters = 0
 	$"texto timer".start()
 
 func mudar_botoes():

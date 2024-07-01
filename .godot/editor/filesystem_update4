@@ -1,9 +1,9 @@
-res://paginas/entraboneco.tscn
+res://scenes/world.tscn
 res://pghandle.gd
 res://RichTextLabel.gd
-res://scenes/world.tscn
 res://actors/player.tscn
 res://twine.tscn
-res://primeira pagina.tscn
 res://paginas/primeira pagina.tscn
 res://scenes/entraboneco.tscn
+res://scenes/entraboneco.gd
+res://paginas/pagina obediente.tscn

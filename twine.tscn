@@ -1,7 +1,7 @@
 [gd_scene load_steps=5 format=3 uid="uid://ckwk2pt8imoyp"]
 
 [ext_resource type="Script" path="res://pghandle.gd" id="1_2hjcr"]
-[ext_resource type="FontFile" uid="uid://m8uvkilm6m3g" path="res://assets/VCR_OSD_MONO_1.001.ttf" id="1_55gla"]
+[ext_resource type="FontFile" uid="uid://m8uvkilm6m3g" path="res://Assets/VCR_OSD_MONO_1.001.ttf" id="1_55gla"]
 [ext_resource type="Script" path="res://twine.gd" id="1_u8s40"]
 [ext_resource type="Script" path="res://RichTextLabel.gd" id="2_sscux"]
 

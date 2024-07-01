@@ -1,8 +1,8 @@
 [gd_scene load_steps=22 format=3 uid="uid://dfm426ls5mm5r"]
 
 [ext_resource type="Script" path="res://actors/player.gd" id="1_p5amo"]
-[ext_resource type="Texture2D" uid="uid://dcsur8ilpxvjq" path="res://assets/santa_sheets/idle_sheet.png" id="2_lh366"]
-[ext_resource type="Texture2D" uid="uid://bnwexwhv3hc4h" path="res://assets/santa_sheets/run_sheet.png" id="2_n00ig"]
+[ext_resource type="Texture2D" uid="uid://dcsur8ilpxvjq" path="res://Assets/santa_sheets/idle_sheet.png" id="2_lh366"]
+[ext_resource type="Texture2D" uid="uid://bnwexwhv3hc4h" path="res://Assets/santa_sheets/run_sheet.png" id="2_n00ig"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r2i8i"]
 size = Vector2(20, 16)

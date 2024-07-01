@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://b0qnjaq75vtwx"
-path="res://.godot/imported/all_jump_frames_sheet.png-6789428db2a1ee752ad234a60493350b.ctex"
+path="res://.godot/imported/all_jump_frames_sheet.png-4e9bb39b37a76ad615b8820704d9662e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/santa_sheets/jump/all_jump_frames_sheet.png"
-dest_files=["res://.godot/imported/all_jump_frames_sheet.png-6789428db2a1ee752ad234a60493350b.ctex"]
+source_file="res://Assets/santa_sheets/jump/all_jump_frames_sheet.png"
+dest_files=["res://.godot/imported/all_jump_frames_sheet.png-4e9bb39b37a76ad615b8820704d9662e.ctex"]
 
 [params]
 

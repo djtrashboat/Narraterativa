@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cw8sg2b31j0v7"
-path="res://.godot/imported/throw_sheet.png-8e5b7b816468e8a6b9684806ac8abeda.ctex"
+path="res://.godot/imported/throw_sheet.png-1e5913933c622cd006766d8ae32f1b68.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/santa_sheets/throw_sheet.png"
-dest_files=["res://.godot/imported/throw_sheet.png-8e5b7b816468e8a6b9684806ac8abeda.ctex"]
+source_file="res://Assets/santa_sheets/throw_sheet.png"
+dest_files=["res://.godot/imported/throw_sheet.png-1e5913933c622cd006766d8ae32f1b68.ctex"]
 
 [params]
 
