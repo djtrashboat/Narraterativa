@@ -30,17 +30,15 @@ func aparecendo_texto():
 	if(texto.text.length()>texto.visible_characters):
 		texto.visible_characters += 2
 	else:
-		botoes.visible = true
+		#print(botoes.get_children())
+		aparecendo_botoes()
+		#botoes.visible = true
 		$"texto timer".stop()
 
 func _on_texto_timer_timeout():
 	aparecendo_texto()
 
-
-
-func _on_botao_1_button_down():
-	
-	#get_parent().get_tree().change_scene_to_file("res://scenes/world.tscn")
-	#if BaseButton.scene_changer:
-	#	print(Button.proxima_pagina)
-	pass
+func aparecendo_botoes():
+	for i in botoes.get_children():
+			if(i.has_method("aparece")):
+				i.aparece()

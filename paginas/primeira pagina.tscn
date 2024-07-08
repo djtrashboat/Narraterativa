@@ -56,7 +56,6 @@ visible_characters = 0
 visible_ratio = 0.0
 
 [node name="botoes" type="HBoxContainer" parent="Container/página"]
-visible = false
 layout_direction = 2
 layout_mode = 2
 size_flags_horizontal = 0
@@ -92,10 +91,13 @@ theme_override_colors/font_pressed_color = Color(0, 0, 1, 1)
 theme_override_colors/font_hover_color = Color(0.895869, 0.868954, 7.70092e-07, 1)
 theme_override_fonts/font = ExtResource("2_yf2gm")
 theme_override_font_sizes/font_size = 10
-text = "página 4"
+text = "esperou aaaa"
+script = ExtResource("3_rfvun")
+proxima_pagina = "res://scenes/world.tscn"
+waitable = true
 
 [connection signal="timeout" from="Container/texto timer" to="Container" method="_on_texto_timer_timeout"]
 [connection signal="button_down" from="Container/página/botoes/botao1" to="Container" method="_on_botao_1_button_down"]
 [connection signal="button_down" from="Container/página/botoes/botao1" to="Container/página/botoes/botao1" method="_on_button_down"]
-[connection signal="button_down" from="Container/página/botoes/botao3" to="Container" method="_on_botao_1_button_down"]
 [connection signal="button_down" from="Container/página/botoes/botao3" to="Container/página/botoes/botao3" method="_on_button_down"]
+[connection signal="button_down" from="Container/página/botoes/botao2" to="Container/página/botoes/botao2" method="_on_button_down"]
