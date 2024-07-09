@@ -4,6 +4,7 @@ extends Button
 @export var scene_changer = true
 @export var waitable = false
 @export var _waittime = 7.0
+@export var fake = false
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	self.visible = false
@@ -11,7 +12,8 @@ func _ready():
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
+	if fake and is_hovered():
+		visible = false
 
 func aparece():
 	if !waitable:

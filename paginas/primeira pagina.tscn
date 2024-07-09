@@ -83,6 +83,7 @@ theme_override_font_sizes/font_size = 10
 text = "voltar para o início"
 script = ExtResource("3_rfvun")
 proxima_pagina = "res://twine.tscn"
+fake = true
 
 [node name="botao2" type="Button" parent="Container/página/botoes"]
 layout_mode = 2
