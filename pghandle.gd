@@ -27,8 +27,11 @@ func adicionar_botoes():
 
 
 func aparecendo_texto():	
-	if(texto.text.length()>texto.visible_characters):
-		texto.visible_characters += 2
+	if(texto.text.length()>=texto.visible_characters):
+		if Input.is_action_pressed("mouse1"):
+			texto.visible_characters += 6
+		else:
+			texto.visible_characters += 2
 	else:
 		#print(botoes.get_children())
 		aparecendo_botoes()

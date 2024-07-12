@@ -1,7 +1,7 @@
 [gd_scene load_steps=4 format=3 uid="uid://b6f5nxvjtt8lt"]
 
 [ext_resource type="Script" path="res://pghandle.gd" id="1_6syg1"]
-[ext_resource type="FontFile" uid="uid://m8uvkilm6m3g" path="res://Assets/VCR_OSD_MONO_1.001.ttf" id="2_yf2gm"]
+[ext_resource type="FontFile" uid="uid://m8uvkilm6m3g" path="res://assets/VCR_OSD_MONO_1.001.ttf" id="2_yf2gm"]
 [ext_resource type="Script" path="res://paginas/botao.gd" id="3_rfvun"]
 
 [node name="pagina 1" type="Node2D"]
@@ -83,7 +83,6 @@ theme_override_font_sizes/font_size = 10
 text = "voltar para o início"
 script = ExtResource("3_rfvun")
 proxima_pagina = "res://twine.tscn"
-fake = true
 
 [node name="botao2" type="Button" parent="Container/página/botoes"]
 layout_mode = 2

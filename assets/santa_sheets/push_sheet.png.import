@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bo3jh58mj841p"
-path="res://.godot/imported/push_sheet.png-6cbb48cc0d7135481342d103242148ae.ctex"
+path="res://.godot/imported/push_sheet.png-44b1ea1986bb8ca1d945defc85da90b7.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Assets/santa_sheets/push_sheet.png"
-dest_files=["res://.godot/imported/push_sheet.png-6cbb48cc0d7135481342d103242148ae.ctex"]
+source_file="res://assets/santa_sheets/push_sheet.png"
+dest_files=["res://.godot/imported/push_sheet.png-44b1ea1986bb8ca1d945defc85da90b7.ctex"]
 
 [params]
 
