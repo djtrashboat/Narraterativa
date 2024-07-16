@@ -1,6 +1,13 @@
-res://scenes/world.tscn
+res://paginas/pagina template.tscn
 res://pghandle.gd
 res://RichTextLabel.gd
+res://scenes/world.tscn
 res://actors/player.tscn
-res://twine.tscn
 res://paginas/primeira pagina.tscn
+res://paginas/INICIO.tscn
+res://paginas/TEMPLATE.tscn
+res://paginas/botao.gd
+res://paginas/meio.tscn
+res://paginas/anda2.tscn
+res://paginas/anda1.tscn
+res://paginas/anda3.tscn

@@ -3,6 +3,7 @@ extends Container
 @onready var botoes = $"página/botoes"
 
 func _ready():
+	texto.visible_characters = 0
 	mudar_texto()
 
 

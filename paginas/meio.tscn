@@ -1,0 +1,114 @@
+[gd_scene load_steps=4 format=3 uid="uid://cfnd0mn6keu0e"]
+
+[ext_resource type="Script" path="res://pghandle.gd" id="1_qb53y"]
+[ext_resource type="FontFile" uid="uid://m8uvkilm6m3g" path="res://assets/VCR_OSD_MONO_1.001.ttf" id="2_11sif"]
+[ext_resource type="Script" path="res://paginas/botao.gd" id="3_ltwg2"]
+
+[node name="pagina 1" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 384.0
+offset_bottom = 216.0
+color = Color(0, 0, 0, 1)
+
+[node name="Container" type="Container" parent="."]
+clip_contents = true
+custom_minimum_size = Vector2(384, 216)
+layout_direction = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_right = 384.0
+offset_bottom = 216.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qb53y")
+
+[node name="texto timer" type="Timer" parent="Container"]
+wait_time = 0.05
+autostart = true
+
+[node name="página" type="MarginContainer" parent="Container"]
+layout_mode = 2
+theme_override_constants/margin_left = 10
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = -10
+theme_override_constants/margin_bottom = 10
+
+[node name="texto" type="RichTextLabel" parent="Container/página"]
+custom_minimum_size = Vector2(368, 106.615)
+layout_mode = 2
+theme_override_fonts/normal_font = ExtResource("2_11sif")
+theme_override_fonts/bold_font = ExtResource("2_11sif")
+theme_override_fonts/italics_font = ExtResource("2_11sif")
+theme_override_fonts/bold_italics_font = ExtResource("2_11sif")
+theme_override_fonts/mono_font = ExtResource("2_11sif")
+theme_override_font_sizes/normal_font_size = 12
+theme_override_font_sizes/bold_font_size = 12
+theme_override_font_sizes/italics_font_size = 12
+theme_override_font_sizes/bold_italics_font_size = 12
+theme_override_font_sizes/mono_font_size = 12
+text = "Você segue por um caminho escuro, sem conseguir ver nada. O único indício do seu progresso é a sensação de que você esta seguindo em frente."
+scroll_active = false
+
+[node name="botoes" type="HBoxContainer" parent="Container/página"]
+layout_direction = 2
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 8
+theme_override_constants/separation = 20
+
+[node name="botao2" type="Button" parent="Container/página/botoes"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 1, 1)
+theme_override_colors/font_hover_color = Color(0.895869, 0.868954, 7.70092e-07, 1)
+theme_override_fonts/font = ExtResource("2_11sif")
+theme_override_font_sizes/font_size = 10
+text = "ir para
+a esquerda"
+script = ExtResource("3_ltwg2")
+proxima_pagina = "res://paginas/anda1.tscn"
+
+[node name="botao1" type="Button" parent="Container/página/botoes"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 1, 1)
+theme_override_colors/font_hover_color = Color(0.895869, 0.868954, 7.70092e-07, 1)
+theme_override_fonts/font = ExtResource("2_11sif")
+theme_override_font_sizes/font_size = 10
+text = "seguir
+em frente"
+script = ExtResource("3_ltwg2")
+proxima_pagina = "res://paginas/anda1.tscn"
+
+[node name="botao3" type="Button" parent="Container/página/botoes"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 1, 1)
+theme_override_colors/font_hover_color = Color(0.895869, 0.868954, 7.70092e-07, 1)
+theme_override_fonts/font = ExtResource("2_11sif")
+theme_override_font_sizes/font_size = 10
+text = "ir para
+a direita"
+script = ExtResource("3_ltwg2")
+proxima_pagina = "res://paginas/anda1.tscn"
+
+[node name="botao4" type="Button" parent="Container/página/botoes"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 1, 1)
+theme_override_colors/font_hover_color = Color(0.895869, 0.868954, 7.70092e-07, 1)
+theme_override_fonts/font = ExtResource("2_11sif")
+theme_override_font_sizes/font_size = 10
+text = "voltar
+para trás"
+script = ExtResource("3_ltwg2")
+proxima_pagina = "res://paginas/INICIO.tscn"
+
+[connection signal="timeout" from="Container/texto timer" to="Container" method="_on_texto_timer_timeout"]
+[connection signal="button_down" from="Container/página/botoes/botao2" to="Container/página/botoes/botao2" method="_on_button_down"]
+[connection signal="button_down" from="Container/página/botoes/botao1" to="Container" method="_on_botao_1_button_down"]
+[connection signal="button_down" from="Container/página/botoes/botao1" to="Container/página/botoes/botao1" method="_on_button_down"]
+[connection signal="button_down" from="Container/página/botoes/botao3" to="Container/página/botoes/botao3" method="_on_button_down"]
+[connection signal="button_down" from="Container/página/botoes/botao4" to="Container/página/botoes/botao4" method="_on_button_down"]

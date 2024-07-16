@@ -1,13 +1,10 @@
-[gd_scene load_steps=6 format=3 uid="uid://ckwk2pt8imoyp"]
+[gd_scene load_steps=4 format=3 uid="uid://b5dspatj5gn30"]
 
-[ext_resource type="Script" path="res://pghandle.gd" id="1_2hjcr"]
-[ext_resource type="FontFile" uid="uid://m8uvkilm6m3g" path="res://assets/VCR_OSD_MONO_1.001.ttf" id="1_55gla"]
-[ext_resource type="Script" path="res://twine.gd" id="1_u8s40"]
-[ext_resource type="Script" path="res://RichTextLabel.gd" id="2_sscux"]
-[ext_resource type="Script" path="res://paginas/botao.gd" id="5_0uq0d"]
+[ext_resource type="Script" path="res://pghandle.gd" id="1_0n8sw"]
+[ext_resource type="FontFile" uid="uid://m8uvkilm6m3g" path="res://assets/VCR_OSD_MONO_1.001.ttf" id="2_e05t1"]
+[ext_resource type="Script" path="res://paginas/botao.gd" id="3_3ip5a"]
 
-[node name="Twine template" type="Node2D"]
-script = ExtResource("1_u8s40")
+[node name="pagina 1" type="Node2D"]
 
 [node name="ColorRect" type="ColorRect" parent="."]
 offset_right = 384.0
@@ -25,7 +22,7 @@ offset_right = 384.0
 offset_bottom = 216.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_2hjcr")
+script = ExtResource("1_0n8sw")
 
 [node name="texto timer" type="Timer" parent="Container"]
 wait_time = 0.05
@@ -38,45 +35,21 @@ theme_override_constants/margin_top = 10
 theme_override_constants/margin_right = -10
 theme_override_constants/margin_bottom = 10
 
-[node name="RichTextLabel" type="RichTextLabel" parent="Container/página"]
-visible = false
-custom_minimum_size = Vector2(368, 106.615)
-layout_mode = 2
-theme_override_fonts/normal_font = ExtResource("1_55gla")
-theme_override_fonts/bold_font = ExtResource("1_55gla")
-theme_override_fonts/italics_font = ExtResource("1_55gla")
-theme_override_fonts/bold_italics_font = ExtResource("1_55gla")
-theme_override_fonts/mono_font = ExtResource("1_55gla")
-text = "aaaaaaaaaaaaaa
-teste
-teste
-aaaaaaaaa
-"
-scroll_active = false
-script = ExtResource("2_sscux")
-
 [node name="texto" type="RichTextLabel" parent="Container/página"]
 custom_minimum_size = Vector2(368, 106.615)
 layout_mode = 2
-theme_override_fonts/normal_font = ExtResource("1_55gla")
-theme_override_fonts/bold_font = ExtResource("1_55gla")
-theme_override_fonts/italics_font = ExtResource("1_55gla")
-theme_override_fonts/bold_italics_font = ExtResource("1_55gla")
-theme_override_fonts/mono_font = ExtResource("1_55gla")
+theme_override_fonts/normal_font = ExtResource("2_e05t1")
+theme_override_fonts/bold_font = ExtResource("2_e05t1")
+theme_override_fonts/italics_font = ExtResource("2_e05t1")
+theme_override_fonts/bold_italics_font = ExtResource("2_e05t1")
+theme_override_fonts/mono_font = ExtResource("2_e05t1")
 theme_override_font_sizes/normal_font_size = 12
 theme_override_font_sizes/bold_font_size = 12
 theme_override_font_sizes/italics_font_size = 12
 theme_override_font_sizes/bold_italics_font_size = 12
 theme_override_font_sizes/mono_font_size = 12
-text = "aaaaaaaaaaaaaa
-teste
-teste
-aaaaaaaaa
-bbbbbbbbbbb
-"
+text = "\"Existe um caminho certo\"?"
 scroll_active = false
-visible_characters = 0
-visible_ratio = 0.0
 
 [node name="botoes" type="HBoxContainer" parent="Container/página"]
 layout_direction = 2
@@ -90,20 +63,43 @@ layout_mode = 2
 theme_override_colors/font_color = Color(0, 1, 1, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 1, 1)
 theme_override_colors/font_hover_color = Color(0.895869, 0.868954, 7.70092e-07, 1)
-theme_override_fonts/font = ExtResource("1_55gla")
+theme_override_fonts/font = ExtResource("2_e05t1")
 theme_override_font_sizes/font_size = 10
-text = "aperte aqui"
+text = "Continuar
+seguindo em frente"
+script = ExtResource("3_3ip5a")
+waitable = true
+_waittime = 5.0
 
 [node name="botao2" type="Button" parent="Container/página/botoes"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 1, 1, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 1, 1)
 theme_override_colors/font_hover_color = Color(0.895869, 0.868954, 7.70092e-07, 1)
-theme_override_fonts/font = ExtResource("1_55gla")
+theme_override_fonts/font = ExtResource("2_e05t1")
 theme_override_font_sizes/font_size = 10
-text = "não, aperte aqui"
-script = ExtResource("5_0uq0d")
-fake = true
+text = "Continuar
+pensando"
+script = ExtResource("3_3ip5a")
+waitable = true
+_waittime = 5.0
+
+[node name="botao3" type="Button" parent="Container/página/botoes"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 1, 1)
+theme_override_colors/font_hover_color = Color(0.895869, 0.868954, 7.70092e-07, 1)
+theme_override_fonts/font = ExtResource("2_e05t1")
+theme_override_font_sizes/font_size = 10
+text = "Voltar para
+o Início
+"
+script = ExtResource("3_3ip5a")
+waitable = true
+_waittime = 5.0
 
 [connection signal="timeout" from="Container/texto timer" to="Container" method="_on_texto_timer_timeout"]
-[connection signal="button_down" from="Container/página/botoes/botao1" to="." method="_on_botao_1_button_down"]
+[connection signal="button_down" from="Container/página/botoes/botao1" to="Container" method="_on_botao_1_button_down"]
+[connection signal="button_down" from="Container/página/botoes/botao1" to="Container/página/botoes/botao1" method="_on_button_down"]
+[connection signal="button_down" from="Container/página/botoes/botao2" to="Container/página/botoes/botao2" method="_on_button_down"]
+[connection signal="button_down" from="Container/página/botoes/botao3" to="Container/página/botoes/botao3" method="_on_button_down"]

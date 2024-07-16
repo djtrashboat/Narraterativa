@@ -6,19 +6,27 @@ extends Button
 @export var _waittime = 7.0
 @export var fake = false
 # Called when the node enters the scene tree for the first time.
+
+var jaapareceu = false
+
 func _ready():
 	self.visible = false
 	self.disabled = true
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	if fake and is_hovered():
-		visible = false
+	if fake and jaapareceu:
+		if is_hovered():
+			visible = false
+		else:
+			#visible = true
+			pass
 
 func aparece():
 	if !waitable:
 		self.visible = true
 		self.disabled = false
+		jaapareceu = true
 	else:
 		var timer := Timer.new()
 		add_child(timer)
@@ -35,3 +43,4 @@ func _on_button_down():
 func _on_timer_Timeout():
 	self.visible = true
 	self.disabled = false
+	jaapareceu = true
