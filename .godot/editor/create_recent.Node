@@ -1,3 +1,4 @@
+Timer
 VBoxContainer
 CollisionShape2D
 Area2D
@@ -6,10 +7,8 @@ MarginContainer
 Container
 Button
 RichTextLabel
-Timer
 TextEdit
 ColorRect
 AnimationPlayer
 AnimatedSprite2D
 Sprite2D
-CharacterBody2D

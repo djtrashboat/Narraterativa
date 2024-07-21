@@ -1,8 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://c78accjtrmksj"]
+[gd_scene load_steps=4 format=3 uid="uid://hq4slqws2wib"]
 
-[ext_resource type="Script" path="res://pghandle.gd" id="1_0h5sv"]
-[ext_resource type="FontFile" uid="uid://m8uvkilm6m3g" path="res://assets/VCR_OSD_MONO_1.001.ttf" id="2_c4jjg"]
-[ext_resource type="Script" path="res://paginas/botao.gd" id="3_jfik5"]
+[ext_resource type="Script" path="res://pghandle.gd" id="1_22yd7"]
+[ext_resource type="FontFile" uid="uid://m8uvkilm6m3g" path="res://assets/VCR_OSD_MONO_1.001.ttf" id="2_aux3s"]
+[ext_resource type="Script" path="res://paginas/botao.gd" id="3_qbgyt"]
 
 [node name="pagina 1" type="Node2D"]
 
@@ -22,7 +22,7 @@ offset_right = 384.0
 offset_bottom = 216.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_0h5sv")
+script = ExtResource("1_22yd7")
 
 [node name="texto timer" type="Timer" parent="Container"]
 wait_time = 0.05
@@ -38,18 +38,18 @@ theme_override_constants/margin_bottom = 10
 [node name="texto" type="RichTextLabel" parent="Container/página"]
 custom_minimum_size = Vector2(368, 106.615)
 layout_mode = 2
-theme_override_fonts/normal_font = ExtResource("2_c4jjg")
-theme_override_fonts/bold_font = ExtResource("2_c4jjg")
-theme_override_fonts/italics_font = ExtResource("2_c4jjg")
-theme_override_fonts/bold_italics_font = ExtResource("2_c4jjg")
-theme_override_fonts/mono_font = ExtResource("2_c4jjg")
+theme_override_fonts/normal_font = ExtResource("2_aux3s")
+theme_override_fonts/bold_font = ExtResource("2_aux3s")
+theme_override_fonts/italics_font = ExtResource("2_aux3s")
+theme_override_fonts/bold_italics_font = ExtResource("2_aux3s")
+theme_override_fonts/mono_font = ExtResource("2_aux3s")
 theme_override_font_sizes/normal_font_size = 12
 theme_override_font_sizes/bold_font_size = 12
 theme_override_font_sizes/italics_font_size = 12
 theme_override_font_sizes/bold_italics_font_size = 12
 theme_override_font_sizes/mono_font_size = 12
-text = "Esse é o template de página
-duplique-a para criar páginas novas"
+text = "Você estende suas mãos na esperança de alcançar algo, mas sem sucesso.
+Talvez pular resolva alguma coisa"
 scroll_active = false
 
 [node name="botoes" type="HBoxContainer" parent="Container/página"]
@@ -64,34 +64,25 @@ layout_mode = 2
 theme_override_colors/font_color = Color(0, 1, 1, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 1, 1)
 theme_override_colors/font_hover_color = Color(0.895869, 0.868954, 7.70092e-07, 1)
-theme_override_fonts/font = ExtResource("2_c4jjg")
+theme_override_fonts/font = ExtResource("2_aux3s")
 theme_override_font_sizes/font_size = 10
-text = "botao 1"
-script = ExtResource("3_jfik5")
+text = "tudo bem"
+script = ExtResource("3_qbgyt")
+proxima_pagina = "res://paginas/caminho roxo/olhando pra cima.tscn"
 
 [node name="botao2" type="Button" parent="Container/página/botoes"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 1, 1, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 1, 1)
 theme_override_colors/font_hover_color = Color(0.895869, 0.868954, 7.70092e-07, 1)
-theme_override_fonts/font = ExtResource("2_c4jjg")
+theme_override_fonts/font = ExtResource("2_aux3s")
 theme_override_font_sizes/font_size = 10
-text = "botao 2"
-script = ExtResource("3_jfik5")
-
-[node name="botao3" type="Button" parent="Container/página/botoes"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0, 1, 1, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 1, 1)
-theme_override_colors/font_hover_color = Color(0.895869, 0.868954, 7.70092e-07, 1)
-theme_override_fonts/font = ExtResource("2_c4jjg")
-theme_override_font_sizes/font_size = 10
-text = "botao 3
-"
-script = ExtResource("3_jfik5")
+text = "pular"
+script = ExtResource("3_qbgyt")
+proxima_pagina = "res://paginas/caminho roxo/voce pula.tscn"
 
 [connection signal="timeout" from="Container/texto timer" to="Container" method="_on_texto_timer_timeout"]
 [connection signal="button_down" from="Container/página/botoes/botao1" to="Container" method="_on_botao_1_button_down"]
 [connection signal="button_down" from="Container/página/botoes/botao1" to="Container/página/botoes/botao1" method="_on_button_down"]
+[connection signal="button_down" from="Container/página/botoes/botao2" to="Container" method="_on_botao_1_button_down"]
 [connection signal="button_down" from="Container/página/botoes/botao2" to="Container/página/botoes/botao2" method="_on_button_down"]
-[connection signal="button_down" from="Container/página/botoes/botao3" to="Container/página/botoes/botao3" method="_on_button_down"]

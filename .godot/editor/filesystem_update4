@@ -1,13 +1,34 @@
-res://paginas/pagina template.tscn
+res://scenes/world.tscn
 res://pghandle.gd
 res://RichTextLabel.gd
-res://scenes/world.tscn
 res://actors/player.tscn
 res://paginas/primeira pagina.tscn
-res://paginas/INICIO.tscn
 res://paginas/TEMPLATE.tscn
-res://paginas/botao.gd
+res://paginas/INICIO.tscn
 res://paginas/meio.tscn
-res://paginas/anda2.tscn
 res://paginas/anda1.tscn
+res://paginas/anda2.tscn
 res://paginas/anda3.tscn
+res://paginas/caminho roxo/se questiona.tscn
+res://paginas/caminho roxo/olhando pra cima.tscn
+res://paginas/caminho roxo/TEMPLATE.tscn
+res://paginas/caminho roxo/direcao.tscn
+res://paginas/caminho roxo/nao enxergar.tscn
+res://paginas/caminho roxo/estende as maos.tscn
+res://paginas/caminho roxo/voce pula.tscn
+res://paginas/caminho roxo/para baixo.tscn
+res://paginas/caminho roxo/cabe a voce.tscn
+res://paginas/caminho roxo/toma consciencia.tscn
+res://paginas/caminho roxo/sequer tem corpo.tscn
+res://paginas/caminho roxo/descobrir.tscn
+res://paginas/caminho roxo/nunca houve.tscn
+res://paginas/caminho roxo/tenta.tscn
+res://paginas/caminho roxo/descanso.tscn
+res://paginas/caminho roxo/se abaixa.tscn
+res://paginas/caminho roxo/black mirror.tscn
+res://paginas/caminho verde/espera tanto.tscn
+res://paginas/caminho verde/indecisao.tscn
+res://paginas/caminho verde/vazio.tscn
+res://paginas/caminho verde/ja que insiste.tscn
+res://paginas/caminho verde/tem certeza.tscn
+res://paginas/caminho verde/ja que insiste.gd
