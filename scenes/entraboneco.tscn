@@ -2,18 +2,18 @@
 
 [ext_resource type="Script" path="res://pghandle.gd" id="1_0hpfg"]
 [ext_resource type="Script" path="res://scenes/entraboneco.gd" id="1_ytm2x"]
-[ext_resource type="FontFile" uid="uid://m8uvkilm6m3g" path="res://Assets/VCR_OSD_MONO_1.001.ttf" id="2_45nm2"]
+[ext_resource type="FontFile" uid="uid://m8uvkilm6m3g" path="res://assets/VCR_OSD_MONO_1.001.ttf" id="2_45nm2"]
 [ext_resource type="Script" path="res://paginas/botao.gd" id="3_75l7w"]
 [ext_resource type="PackedScene" uid="uid://dfm426ls5mm5r" path="res://actors/player.tscn" id="4_7tgx3"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_hdlsj"]
-size = Vector2(437, 24)
+size = Vector2(412, 29)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_r23kt"]
 size = Vector2(238, 181)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_kwh8t"]
-size = Vector2(20, 256)
+size = Vector2(20, 242)
 
 [node name="pagina 1" type="Node2D"]
 script = ExtResource("1_ytm2x")
@@ -60,7 +60,7 @@ theme_override_font_sizes/bold_font_size = 12
 theme_override_font_sizes/italics_font_size = 12
 theme_override_font_sizes/bold_italics_font_size = 12
 theme_override_font_sizes/mono_font_size = 12
-text = "deixe a seta para baixo pressionada"
+text = "quem sabe você se encontra se deixar a seta para baixo pressionada?"
 scroll_active = false
 visible_characters = 0
 visible_ratio = 0.0
@@ -101,7 +101,7 @@ position = Vector2(53, -30)
 [node name="Area2D" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
-position = Vector2(190.5, 46)
+position = Vector2(178, 43.5)
 shape = SubResource("RectangleShape2D_hdlsj")
 
 [node name="Area2Ddir" type="Area2D" parent="."]
@@ -113,7 +113,7 @@ shape = SubResource("RectangleShape2D_r23kt")
 [node name="Area2Desq" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2Desq"]
-position = Vector2(-38, 115)
+position = Vector2(-16, 122)
 shape = SubResource("RectangleShape2D_kwh8t")
 
 [connection signal="timeout" from="Container/texto timer" to="Container" method="_on_texto_timer_timeout"]

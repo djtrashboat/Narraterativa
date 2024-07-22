@@ -68,6 +68,7 @@ theme_override_font_sizes/font_size = 10
 text = "Continuar
 seguindo em frente"
 script = ExtResource("3_3ip5a")
+proxima_pagina = "res://scenes/entraboneco.tscn"
 waitable = true
 _waittime = 3.0
 
@@ -93,9 +94,9 @@ theme_override_colors/font_hover_color = Color(0.895869, 0.868954, 7.70092e-07, 
 theme_override_fonts/font = ExtResource("2_e05t1")
 theme_override_font_sizes/font_size = 10
 text = "Voltar para
-o Início
-"
+o módulo central"
 script = ExtResource("3_3ip5a")
+proxima_pagina = "res://paginas/modulo central/modulo central.tscn"
 waitable = true
 _waittime = 3.0
 

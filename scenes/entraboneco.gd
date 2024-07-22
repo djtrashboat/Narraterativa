@@ -12,14 +12,16 @@ func _process(delta):
 	pass
 
 func _on_area_2d_body_entered(body):
-	texto.text = "muito bem, agora a seta para a direita"
+	texto.text = "muito bem, funcionou agora segure a seta para a direita"
 	container.mudar_pagina()
+	$Area2D.queue_free()
 
 
 func _on_area_2_ddir_body_entered(body):
 	texto.text = "parabéns, você está indo muito bem nisso
 agora vá o máximo para a esquerda que conseguir"
 	container.mudar_pagina()
+	$Area2Ddir.queue_free()
 
 
 func _on_area_2_desq_body_entered(body):

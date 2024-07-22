@@ -1,8 +1,8 @@
-[gd_scene load_steps=4 format=3 uid="uid://cuyf0det0j3ef"]
+[gd_scene load_steps=4 format=3 uid="uid://ctl8brehg7syu"]
 
-[ext_resource type="Script" path="res://pghandle.gd" id="1_v7tjy"]
-[ext_resource type="FontFile" uid="uid://m8uvkilm6m3g" path="res://assets/VCR_OSD_MONO_1.001.ttf" id="2_apaly"]
-[ext_resource type="Script" path="res://paginas/botao.gd" id="3_3ofuu"]
+[ext_resource type="Script" path="res://pghandle.gd" id="1_eu4hh"]
+[ext_resource type="FontFile" uid="uid://m8uvkilm6m3g" path="res://assets/VCR_OSD_MONO_1.001.ttf" id="2_yy2ym"]
+[ext_resource type="Script" path="res://paginas/botao.gd" id="3_j8w0k"]
 
 [node name="pagina 1" type="Node2D"]
 
@@ -22,7 +22,7 @@ offset_right = 384.0
 offset_bottom = 216.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_v7tjy")
+script = ExtResource("1_eu4hh")
 
 [node name="texto timer" type="Timer" parent="Container"]
 wait_time = 0.05
@@ -38,17 +38,17 @@ theme_override_constants/margin_bottom = 10
 [node name="texto" type="RichTextLabel" parent="Container/página"]
 custom_minimum_size = Vector2(368, 106.615)
 layout_mode = 2
-theme_override_fonts/normal_font = ExtResource("2_apaly")
-theme_override_fonts/bold_font = ExtResource("2_apaly")
-theme_override_fonts/italics_font = ExtResource("2_apaly")
-theme_override_fonts/bold_italics_font = ExtResource("2_apaly")
-theme_override_fonts/mono_font = ExtResource("2_apaly")
+theme_override_fonts/normal_font = ExtResource("2_yy2ym")
+theme_override_fonts/bold_font = ExtResource("2_yy2ym")
+theme_override_fonts/italics_font = ExtResource("2_yy2ym")
+theme_override_fonts/bold_italics_font = ExtResource("2_yy2ym")
+theme_override_fonts/mono_font = ExtResource("2_yy2ym")
 theme_override_font_sizes/normal_font_size = 12
 theme_override_font_sizes/bold_font_size = 12
 theme_override_font_sizes/italics_font_size = 12
 theme_override_font_sizes/bold_italics_font_size = 12
 theme_override_font_sizes/mono_font_size = 12
-text = "Olhando para o caminho de onde você veio, percebe não enxergar o caminho pelo qual percorreu"
+text = "Como você imaginou, a porta está trancada. Além disso, ela é feita de madeira maciça, o que rapidamente te leva à conclusão de que não existe nenhuma chance de você conseguir abrir ela à força"
 scroll_active = false
 
 [node name="botoes" type="HBoxContainer" parent="Container/página"]
@@ -63,27 +63,12 @@ layout_mode = 2
 theme_override_colors/font_color = Color(0, 1, 1, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 1, 1)
 theme_override_colors/font_hover_color = Color(0.895869, 0.868954, 7.70092e-07, 1)
-theme_override_fonts/font = ExtResource("2_apaly")
+theme_override_fonts/font = ExtResource("2_yy2ym")
 theme_override_font_sizes/font_size = 10
-text = "Olhar
-para cima"
-script = ExtResource("3_3ofuu")
-proxima_pagina = "res://paginas/caminho roxo/olhando pra cima.tscn"
-
-[node name="botao2" type="Button" parent="Container/página/botoes"]
-layout_mode = 2
-theme_override_colors/font_color = Color(0, 1, 1, 1)
-theme_override_colors/font_pressed_color = Color(0, 0, 1, 1)
-theme_override_colors/font_hover_color = Color(0.895869, 0.868954, 7.70092e-07, 1)
-theme_override_fonts/font = ExtResource("2_apaly")
-theme_override_font_sizes/font_size = 10
-text = "Olhar
-para baixo"
-script = ExtResource("3_3ofuu")
-proxima_pagina = "res://paginas/caminho roxo/para baixo.tscn"
+text = "Bater na Porta"
+script = ExtResource("3_j8w0k")
+proxima_pagina = "res://paginas/modulo central/voce caminha.tscn"
 
 [connection signal="timeout" from="Container/texto timer" to="Container" method="_on_texto_timer_timeout"]
 [connection signal="button_down" from="Container/página/botoes/botao1" to="Container" method="_on_botao_1_button_down"]
 [connection signal="button_down" from="Container/página/botoes/botao1" to="Container/página/botoes/botao1" method="_on_button_down"]
-[connection signal="button_down" from="Container/página/botoes/botao2" to="Container" method="_on_botao_1_button_down"]
-[connection signal="button_down" from="Container/página/botoes/botao2" to="Container/página/botoes/botao2" method="_on_button_down"]

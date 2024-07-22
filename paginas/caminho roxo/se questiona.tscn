@@ -69,6 +69,7 @@ text = "-\"Espera,
 como eu vim
 parar aqui?\""
 script = ExtResource("3_3g6t4")
+proxima_pagina = "res://paginas/caminho roxo/vim parar aqui.tscn"
 waitable = true
 _waittime = 0.5
 
@@ -82,6 +83,7 @@ theme_override_font_sizes/font_size = 10
 text = "-\"Para onde
 eu devo ir\"?"
 script = ExtResource("3_3g6t4")
+proxima_pagina = "res://paginas/caminho roxo/direcao.tscn"
 waitable = true
 _waittime = 1.0
 
@@ -96,6 +98,7 @@ text = "-\"Pensar demais
 vai me levar a
 alguma coisa?\""
 script = ExtResource("3_3g6t4")
+proxima_pagina = "res://paginas/caminho roxo/pensar demais.tscn"
 waitable = true
 _waittime = 1.5
 
