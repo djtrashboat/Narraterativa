@@ -1,8 +1,9 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1721679757
+::res://::1721681086
+export_presets.cfg::TextFile::-1::1721680638::0::1::::<><>::
 icon.svg::CompressedTexture2D::7071233803494211508::1718683901::1720754723::1::::<><>::
-pghandle.gd::GDScript::-1::1721675036::0::1::::<>Container<>::
-RichTextLabel.gd::GDScript::-1::1721675036::0::1::::<>RichTextLabel<>::
+pghandle.gd::GDScript::-1::1721679843::0::1::::<>Container<>::
+RichTextLabel.gd::GDScript::-1::1721679843::0::1::::<>RichTextLabel<>::
 twine.gd::GDScript::-1::1719695481::0::1::::<>Node2D<>::
 twine.tscn::PackedScene::5520802319431022263::1721084371::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://twine.gd<>res://RichTextLabel.gd<>res://paginas/botao.gd
 ::res://actors/::1721528940
@@ -23,36 +24,37 @@ all_jump_frames_sheet.png::CompressedTexture2D::4174977237971717591::1718685549:
 jump_anticipation_sheet.png::CompressedTexture2D::6938832248061351698::1718685549::1720754723::1::::<><>::
 jump_down_sheet.png::CompressedTexture2D::6023763969563722322::1718685549::1720754723::1::::<><>::
 jump_up_sheet.png::CompressedTexture2D::6875666125254710095::1718685549::1720754723::1::::<><>::
-::res://paginas/::1721678229
+::res://export/::1721680059
+::res://paginas/::1721681061
 anda1.tscn::PackedScene::7319700874549299761::1721528940::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
 anda2.tscn::PackedScene::1430799237397708854::1721528940::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
 anda3.tscn::PackedScene::4499398848675166325::1721678229::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
 botao.gd::GDScript::-1::1721087194::0::1::::<>Button<>::
-INICIO.tscn::PackedScene::4319399221922361249::1721676461::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
+INICIO.tscn::PackedScene::4319399221922361249::1721681061::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
 meio.tscn::PackedScene::5150849943989764742::1721676461::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
 pagina obediente.tscn::PackedScene::3270221228466839532::1721676796::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
-primeira pagina.tscn::PackedScene::4574442691259201973::1721676461::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
+primeira pagina.tscn::PackedScene::4574442691259201973::1721679894::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
 TEMPLATE.tscn::PackedScene::7087012521111435429::1721527983::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
-::res://paginas/caminho roxo/::1721679745
+::res://paginas/caminho roxo/::1721679894
 black mirror.tscn::PackedScene::2579896195198177536::1721531978::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
 cabe a voce.tscn::PackedScene::3540727317699335652::1721531978::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
 descanso.tscn::PackedScene::6693026787179741832::1721531977::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
 descobrir.tscn::PackedScene::3904829277031300273::1721531977::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
-direcao.tscn::PackedScene::2525953242379179023::1721679714::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
+direcao.tscn::PackedScene::2525953242379179023::1721679894::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
 estende as maos.tscn::PackedScene::526145490110141217::1721531977::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
-nao enxergar.tscn::PackedScene::6226511700702074933::1721679745::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
+nao enxergar.tscn::PackedScene::6226511700702074933::1721679894::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
 nunca houve.tscn::PackedScene::4005291825413527542::1721531977::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
-olhando pra cima.tscn::PackedScene::3000434986161835032::1721679714::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
+olhando pra cima.tscn::PackedScene::3000434986161835032::1721679894::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
 para baixo.tscn::PackedScene::6891712319306697750::1721531977::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
-pensar demais.tscn::PackedScene::7984110483655854049::1721679714::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
+pensar demais.tscn::PackedScene::7984110483655854049::1721679894::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
 se abaixa.tscn::PackedScene::5417318009338916355::1721531977::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
-se questiona.tscn::PackedScene::2638423047589568790::1721679714::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
+se questiona.tscn::PackedScene::2638423047589568790::1721679894::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
 sequer tem corpo.tscn::PackedScene::3641607105844957802::1721531977::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
 TEMPLATE.tscn::PackedScene::7136431543828168115::1721528940::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
 tenta.tscn::PackedScene::141617424456071903::1721531977::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
 toma consciencia.tscn::PackedScene::5098783592207103517::1721531977::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
 vim parar aqui.gd::GDScript::-1::1721679573::0::1::::<>Node2D<>::
-vim parar aqui.tscn::PackedScene::972723897865410264::1721679714::0::1::::<><>::res://paginas/caminho roxo/vim parar aqui.gd<>res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
+vim parar aqui.tscn::PackedScene::972723897865410264::1721679894::0::1::::<><>::res://paginas/caminho roxo/vim parar aqui.gd<>res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
 voce pula.tscn::PackedScene::9027956055026974467::1721531977::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
 ::res://paginas/caminho verde/::1721676461
 espera tanto.tscn::PackedScene::5415761721438684341::1721676461::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
@@ -62,17 +64,17 @@ ja que insiste.tscn::PackedScene::7564082620567279722::1721676461::0::1::::<><>:
 tem certeza.tscn::PackedScene::3170962061458433603::1721676461::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
 TEMPLATE.tscn::PackedScene::3673424761455322238::1721532205::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
 vazio.tscn::PackedScene::8418382440019495987::1721676461::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
-::res://paginas/modulo central/::1721679714
+::res://paginas/modulo central/::1721679894
 como imaginou.tscn::PackedScene::6131143897762188620::1721678229::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
 direita.gd::GDScript::-1::1721678848::0::1::::<>Node2D<>::
-direita.tscn::PackedScene::7460878528009612117::1721679714::0::1::::<><>::res://pghandle.gd<>res://paginas/modulo central/direita.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
+direita.tscn::PackedScene::7460878528009612117::1721679894::0::1::::<><>::res://pghandle.gd<>res://paginas/modulo central/direita.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
 esta trancada.tscn::PackedScene::7695079408376774282::1721678229::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
 mente fechada.tscn::PackedScene::7436564463902319484::1721677920::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf
 modulo central.tscn::PackedScene::2778697386303172860::1721678229::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
 tanta abrir.tscn::PackedScene::1256512002530539992::1721678276::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
 TEMPLATE2.tscn::PackedScene::5166088097452881335::1721677387::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
 voce caminha.tscn::PackedScene::854592070360784758::1721677884::0::1::::<><>::res://pghandle.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd
-::res://scenes/::1721679714
+::res://scenes/::1721679894
 entraboneco.gd::GDScript::-1::1721676400::0::1::::<>Node2D<>::
-entraboneco.tscn::PackedScene::3009937025749580161::1721679714::0::1::::<><>::res://pghandle.gd<>res://scenes/entraboneco.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd<>uid://dfm426ls5mm5r::::res://actors/player.tscn
+entraboneco.tscn::PackedScene::3009937025749580161::1721679894::0::1::::<><>::res://pghandle.gd<>res://scenes/entraboneco.gd<>uid://m8uvkilm6m3g::::res://assets/VCR_OSD_MONO_1.001.ttf<>res://paginas/botao.gd<>uid://dfm426ls5mm5r::::res://actors/player.tscn
 world.tscn::PackedScene::7414369371827471273::1721528939::0::1::::<><>::uid://dfm426ls5mm5r::::res://actors/player.tscn

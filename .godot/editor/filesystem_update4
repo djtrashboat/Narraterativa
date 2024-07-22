@@ -1,12 +1,3 @@
-res://paginas/caminho roxo/nao enxergar.tscn
+res://paginas/INICIO.tscn
 res://pghandle.gd
 res://RichTextLabel.gd
-res://paginas/modulo central/direita.tscn
-res://paginas/caminho roxo/se questiona.tscn
-res://paginas/caminho roxo/pensar demais.tscn
-res://scenes/entraboneco.tscn
-res://paginas/caminho roxo/vim parar aqui.tscn
-res://paginas/caminho roxo/direcao.tscn
-res://paginas/caminho roxo/olhando pra cima.tscn
-res://paginas/INICIO.tscn
-res://paginas/primeira pagina.tscn
